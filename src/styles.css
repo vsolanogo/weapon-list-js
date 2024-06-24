@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weapons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.weaponElement {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weaponElement h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.weaponElement p {
+    font-size: 1em;
+    color: #666;
+}
+
+.weaponElement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.weaponElement button {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weaponElement button:hover {
+    background-color: #0056b3;
+}
+
+.weaponElement .extended-info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.modalBackground {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000054;
+    z-index: 1000;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modalWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+}
+
+.modalContent {
+    padding: 1em;
+    min-width: 15em;
+    box-shadow: 1px 7px 20px 2px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 82vh;
+    width: 600px;
+    position: relative;
+}
+
+@media (max-width: 640px) {
+    .modalContent {
+        width: 90vw;
+    }
+}
